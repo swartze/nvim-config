@@ -34,6 +34,10 @@ return {
 			vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, {})
 			vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, {})
+			vim.keymap.set("n", "<leader>gD", "<cmd>lua vim.lsp.buf.declaration()<CR>", {})
+			vim.keymap.set("n", "<leader>gI", "<cmd>lua vim.lsp.buf.implementation()<CR>", {})
+			vim.keymap.set("n", "<leader>gr", "<cmd>lua vim.lsp.buf.references()<CR>", {})
+			vim.keymap.set("n", "<leader>gl", "<cmd>lua vim.diagnostic.open_float()<CR>", {})
 		end,
 	},
 }
