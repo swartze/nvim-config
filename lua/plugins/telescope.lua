@@ -9,6 +9,7 @@ return {
       vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
       vim.keymap.set('n', '<leader>fh', builtin.oldfiles, {})
       vim.keymap.set('n', '<leader>fm', builtin.marks, {})
+      vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
     end
   },
   {
