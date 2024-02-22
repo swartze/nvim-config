@@ -8,6 +8,17 @@ vim.opt.termguicolors = true
 vim.g.mapleader = " "
 vim.keymap.set("n", "<C-i>", "<C-i>", opts)
 
+-- Configure how new splits should be opened
+vim.opt.splitright = true
+vim.opt.splitbelow = true
+
+-- Case-insensitive searching UNLESS \C or capital in search
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+
+-- Keep signcolumn on by default
+vim.opt.signcolumn = 'yes'
+
 -- Keep in visual mode when indenting
 vim.keymap.set("v", "<", "<gv", opts)
 vim.keymap.set("v", ">", ">gv", opts)
