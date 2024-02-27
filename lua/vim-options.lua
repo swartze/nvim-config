@@ -26,6 +26,9 @@ vim.keymap.set("v", ">", ">gv", opts)
 vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.wo.number = true
 
+-- enable sync between nvim and system clipboard
+vim.o.clipboard = 'unnamedplus'
+
 if vim.env.TMUX then
 	vim.g.clipboard = {
 		name = "tmux",

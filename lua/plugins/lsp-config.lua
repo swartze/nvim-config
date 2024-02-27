@@ -104,11 +104,17 @@ return {
       local servers = {
         -- clangd = {},
         gopls = {},
-        pyright = {},
+        pyright = {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        filetypes = {"python"},
+      },
         -- rust_analyzer = {},
         -- tsserver = {},
-        -- html = { filetypes = { 'html', 'twig', 'hbs'} },
-
+        -- html = { filetypes = { 'html', 'twig', 'hbs'} },[]
+        marksman = {
+        filetypes = { 'markdown', 'markdown.mdx'}
+      },
         lua_ls = {
           -- cmd = {...},
           -- filetypes { ...},
