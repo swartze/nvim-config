@@ -1,6 +1,4 @@
 return {
-  "vimpostor/vim-tpipeline",
-  lazy = false,
-  config = function()
-  end,
+	"vimpostor/vim-tpipeline",
+	lazy = false,
 }
