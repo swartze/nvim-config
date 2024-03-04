@@ -5,7 +5,7 @@ return {
 		local lint = require("lint")
 
 		lint.linters_by_ft = {
-			paython = { "pylint" },
+			python = { "mypy", "ruff" },
 			markdown = { "vale" },
 			go = { "golangcilint" },
 			yaml = { "yamllint" },
