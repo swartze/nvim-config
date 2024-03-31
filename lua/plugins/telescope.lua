@@ -21,6 +21,7 @@ return {
 					previewer = false,
 				}))
 			end, { desc = "[/] Fuzzily search in current buffer" })
+			require("telescope").load_extension("noice")
 		end,
 	},
 	{
