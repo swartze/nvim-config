@@ -17,7 +17,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = "yes"
 
 -- Keep in visual mode when indenting
 vim.keymap.set("v", "<", "<gv", opts)
@@ -27,7 +27,7 @@ vim.keymap.set("n", "<leader>h", ":nohlsearch<CR>")
 vim.wo.number = true
 
 -- enable sync between nvim and system clipboard
-vim.o.clipboard = 'unnamedplus'
+vim.o.clipboard = unnamedplus
 
 if vim.env.TMUX then
 	vim.g.clipboard = {
